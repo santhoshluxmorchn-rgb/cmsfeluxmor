@@ -33,10 +33,10 @@ const styles = StyleSheet.create({
   headerTitle: {
     flex: 1,
     textAlign: 'center',
-    fontSize: 19,
+    fontSize: 22,
     fontFamily: fonts.headingBold,
     color: '#0F172A',
-    paddingHorizontal: 8,
+    paddingHorizontal: 6,
   },
   backBtn: {
     padding: 6,
