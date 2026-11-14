@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
   },
   bgImage: {
     transform: [
-      { translateY: 24 },
-      { scale: 1.12 },
+      { translateY: 60 },
+      { scale: 1.26 },
     ],
   },
   scrollContent: {
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     borderColor: '#FFFFFF',
   },
   detailsContainer: {
-    marginTop: SCREEN_HEIGHT > 700 ? SCREEN_HEIGHT * 0.32 : 230,
+    marginTop: SCREEN_HEIGHT > 700 ? SCREEN_HEIGHT * 0.38 : 275,
     paddingHorizontal: 4,
     paddingBottom: 20,
   },
