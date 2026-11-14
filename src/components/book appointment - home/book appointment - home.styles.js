@@ -9,6 +9,12 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
   },
+  bgImage: {
+    transform: [
+      { translateY: 24 },
+      { scale: 1.12 },
+    ],
+  },
   scrollContent: {
     flexGrow: 1,
   },
@@ -36,7 +42,7 @@ const styles = StyleSheet.create({
     borderColor: '#FFFFFF',
   },
   detailsContainer: {
-    marginTop: SCREEN_HEIGHT > 700 ? SCREEN_HEIGHT * 0.28 : 200,
+    marginTop: SCREEN_HEIGHT > 700 ? SCREEN_HEIGHT * 0.32 : 230,
     paddingHorizontal: 4,
     paddingBottom: 20,
   },

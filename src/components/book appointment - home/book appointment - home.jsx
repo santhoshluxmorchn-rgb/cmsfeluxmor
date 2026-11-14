@@ -26,6 +26,7 @@ export default function BookAppointmentHomeScreen({ navigation, route }) {
     <ImageBackground
       source={require('../../assets/images/book-appointment-bg.jpg')}
       style={styles.container}
+      imageStyle={styles.bgImage}
       resizeMode="cover"
     >
       <ScrollView
