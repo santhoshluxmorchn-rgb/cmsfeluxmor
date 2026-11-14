@@ -43,6 +43,9 @@ export default function BookAppointmentHomeScreen({ navigation, route }) {
             >
               <Ionicons name="chevron-back" size={28} color="#2F36C6" />
             </TouchableOpacity>
+
+            <Text style={styles.headerTitle}>Healthcare Hospital</Text>
+
             <TouchableOpacity
               onPress={() => navigation.navigate('profile', { userName })}
               activeOpacity={0.8}

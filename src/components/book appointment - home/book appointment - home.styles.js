@@ -30,6 +30,14 @@ const styles = StyleSheet.create({
     marginTop: 8,
     marginBottom: 8,
   },
+  headerTitle: {
+    flex: 1,
+    textAlign: 'center',
+    fontSize: 19,
+    fontFamily: fonts.headingBold,
+    color: '#0F172A',
+    paddingHorizontal: 8,
+  },
   backBtn: {
     padding: 6,
   },
