@@ -1,5 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 import { fonts } from '../../theme/typography';
+
+const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
@@ -7,11 +9,14 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
   },
+  scrollContent: {
+    flexGrow: 1,
+  },
   content: {
     flex: 1,
-    paddingTop: '16%',
+    paddingTop: '14%',
     paddingHorizontal: 20,
-    paddingBottom: 30,
+    paddingBottom: 36,
     justifyContent: 'space-between',
   },
   headerRow: {
@@ -23,15 +28,6 @@ const styles = StyleSheet.create({
   backBtn: {
     padding: 6,
   },
-  titleWrapper: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  headerTitle: {
-    fontSize: 22,
-    fontFamily: fonts.headingBold,
-    color: '#0F172A',
-  },
   avatar: {
     width: 44,
     height: 44,
@@ -40,9 +36,9 @@ const styles = StyleSheet.create({
     borderColor: '#FFFFFF',
   },
   detailsContainer: {
-    marginTop: '36%',
+    marginTop: SCREEN_HEIGHT > 700 ? SCREEN_HEIGHT * 0.28 : 200,
     paddingHorizontal: 4,
-    paddingBottom: 24,
+    paddingBottom: 20,
   },
   ratingRow: {
     flexDirection: 'row',
@@ -61,7 +57,7 @@ const styles = StyleSheet.create({
   },
   infoList: {
     gap: 18,
-    marginBottom: 30,
+    marginBottom: 28,
   },
   infoRow: {
     flexDirection: 'row',
@@ -69,7 +65,7 @@ const styles = StyleSheet.create({
     gap: 14,
   },
   infoText: {
-    fontSize: 16,
+    fontSize: 15.5,
     color: '#0F172A',
     fontFamily: fonts.bodyMedium,
     flexShrink: 1,
@@ -86,13 +82,13 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   mapButtonText: {
-    fontSize: 18,
+    fontSize: 17,
     color: '#2F36C6',
     fontFamily: fonts.headingBold,
   },
   bookButton: {
-    height: 56,
-    borderRadius: 28,
+    height: 54,
+    borderRadius: 27,
     backgroundColor: '#2F36C6',
     flexDirection: 'row',
     alignItems: 'center',
@@ -106,7 +102,7 @@ const styles = StyleSheet.create({
   },
   bookButtonText: {
     color: '#FFFFFF',
-    fontSize: 19,
+    fontSize: 18,
     fontFamily: fonts.headingBold,
   },
 });
