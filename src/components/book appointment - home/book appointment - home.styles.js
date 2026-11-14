@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    paddingTop: '11%',
+    paddingTop: '16%',
     paddingHorizontal: 20,
     paddingBottom: 16,
     justifyContent: 'space-between',
@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    marginTop: 8,
     marginBottom: 8,
   },
   backBtn: {
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
     borderColor: '#FFFFFF',
   },
   detailsContainer: {
-    marginTop: SCREEN_HEIGHT > 700 ? SCREEN_HEIGHT * 0.12 : 90,
+    marginTop: SCREEN_HEIGHT > 700 ? 32 : 18,
     paddingHorizontal: 4,
     paddingBottom: 16,
   },
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
-    marginBottom: 20,
+    marginBottom: 14,
   },
   stars: {
     flexDirection: 'row',
@@ -62,8 +63,8 @@ const styles = StyleSheet.create({
     fontFamily: fonts.bodyMedium,
   },
   infoList: {
-    gap: 18,
-    marginBottom: 28,
+    gap: 14,
+    marginBottom: 20,
   },
   infoRow: {
     flexDirection: 'row',
