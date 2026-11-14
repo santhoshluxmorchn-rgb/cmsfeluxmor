@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
   },
   bgImage: {
     transform: [
-      { translateY: 60 },
-      { scale: 1.26 },
+      { translateY: 95 },
+      { scale: 1.28 },
     ],
   },
   scrollContent: {
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    paddingTop: '14%',
+    paddingTop: '11%',
     paddingHorizontal: 20,
     paddingBottom: 36,
     justifyContent: 'space-between',
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     borderColor: '#FFFFFF',
   },
   detailsContainer: {
-    marginTop: SCREEN_HEIGHT > 700 ? SCREEN_HEIGHT * 0.38 : 275,
+    marginTop: SCREEN_HEIGHT > 700 ? SCREEN_HEIGHT * 0.25 : 180,
     paddingHorizontal: 4,
     paddingBottom: 20,
   },
