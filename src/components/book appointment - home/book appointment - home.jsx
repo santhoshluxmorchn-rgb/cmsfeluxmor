@@ -8,6 +8,7 @@ import {
   View,
 } from 'react-native';
 import { getHospitalInfo } from '../../db';
+import BottomNav from '../../navigation/BottomNav';
 import styles from './book appointment - home.styles';
 
 export default function BookAppointmentHomeScreen({ navigation, route }) {
@@ -105,6 +106,12 @@ export default function BookAppointmentHomeScreen({ navigation, route }) {
           </View>
         </View>
       </ScrollView>
+
+      <BottomNav
+        activeTab="Appointments"
+        navigation={navigation}
+        userName={userName}
+      />
     </ImageBackground>
   );
 }

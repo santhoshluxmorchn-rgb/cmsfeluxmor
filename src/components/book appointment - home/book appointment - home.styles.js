@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: '11%',
     paddingHorizontal: 20,
-    paddingBottom: 36,
+    paddingBottom: 16,
     justifyContent: 'space-between',
   },
   headerRow: {
@@ -42,9 +42,9 @@ const styles = StyleSheet.create({
     borderColor: '#FFFFFF',
   },
   detailsContainer: {
-    marginTop: SCREEN_HEIGHT > 700 ? SCREEN_HEIGHT * 0.25 : 180,
+    marginTop: SCREEN_HEIGHT > 700 ? SCREEN_HEIGHT * 0.12 : 90,
     paddingHorizontal: 4,
-    paddingBottom: 20,
+    paddingBottom: 16,
   },
   ratingRow: {
     flexDirection: 'row',
