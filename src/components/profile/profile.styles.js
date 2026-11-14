@@ -12,15 +12,16 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    paddingTop: '14%',
+    paddingTop: '20%',
     paddingHorizontal: 16,
-    paddingBottom: 20,
+    paddingBottom: 24,
   },
   topRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: 8,
+    marginTop: 6,
+    marginBottom: 12,
   },
   backBtn: {
     padding: 6,
@@ -32,6 +33,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 16,
+    marginTop: 6,
     marginBottom: 16,
     paddingHorizontal: 2,
   },
