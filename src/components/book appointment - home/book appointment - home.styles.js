@@ -19,11 +19,9 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   content: {
-    flex: 1,
     paddingTop: '16%',
     paddingHorizontal: 20,
-    paddingBottom: 16,
-    justifyContent: 'space-between',
+    paddingBottom: 24,
   },
   headerRow: {
     flexDirection: 'row',
@@ -43,7 +41,7 @@ const styles = StyleSheet.create({
     borderColor: '#FFFFFF',
   },
   detailsContainer: {
-    marginTop: SCREEN_HEIGHT > 700 ? 32 : 18,
+    marginTop: SCREEN_HEIGHT > 700 ? 40 : 24,
     paddingHorizontal: 4,
     paddingBottom: 16,
   },
