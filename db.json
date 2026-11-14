@@ -1,0 +1,423 @@
+{
+  "hospitals": [
+    {
+      "id": "h1",
+      "name": "Healthcare Hospital",
+      "rating": 4.8,
+      "reviewsCount": 4,
+      "address": "23, Lake View Road, Chennai - 600041",
+      "phone": "+91 44 4321 9800",
+      "hours": "Mon - Sun: 24 Hours",
+      "coordinates": { "lat": 12.9815, "lng": 80.218 },
+      "features": [
+        {
+          "key": "doctors",
+          "label": "Expert\nDoctors",
+          "iconSet": "mci",
+          "iconName": "stethoscope",
+          "iconSize": 28
+        },
+        {
+          "key": "treatment",
+          "label": "Advanced\nTreatment",
+          "iconSet": "fa5",
+          "iconName": "procedures",
+          "iconSize": 24
+        },
+        {
+          "key": "support",
+          "label": "24/7\nPatients Support",
+          "iconSet": "mci",
+          "iconName": "hours-24",
+          "iconSize": 28
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "patientId": "LUXP012365",
+      "fullName": "Daniel David",
+      "dob": "12 Feb 1995",
+      "gender": "Male",
+      "bloodGroup": "O+",
+      "mobile": "+91 98765 43210",
+      "email": "daniel.david@email.com",
+      "password": "password123",
+      "address": "23, Lake View road, Chennai - 600041, Tamil Nadu."
+    }
+  ],
+  "specialties": [
+    {
+      "id": "1",
+      "title": "General Physician",
+      "desc": "General Health Care",
+      "imageKey": "general_physician"
+    },
+    {
+      "id": "2",
+      "title": "Cardiologist",
+      "desc": "Heart Care",
+      "imageKey": "cardiologist"
+    },
+    {
+      "id": "3",
+      "title": "Neurologist",
+      "desc": "Brain & Nerves",
+      "imageKey": "neurologist"
+    },
+    {
+      "id": "4",
+      "title": "Orthopedic Doctor",
+      "desc": "Bones & Joints",
+      "imageKey": "orthopedic"
+    },
+    {
+      "id": "5",
+      "title": "Dermatologist",
+      "desc": "Skin & Hair",
+      "imageKey": "dermatologist"
+    },
+    {
+      "id": "6",
+      "title": "Pediatrician",
+      "desc": "Children's Health",
+      "imageKey": "pediatrician"
+    },
+    {
+      "id": "7",
+      "title": "Gynecologist",
+      "desc": "Women's Health",
+      "imageKey": "gynecologist"
+    },
+    {
+      "id": "8",
+      "title": "Ophthalmologist",
+      "desc": "Eye Care",
+      "imageKey": "ophthalmologist"
+    },
+    {
+      "id": "9",
+      "title": "ENT Specialist",
+      "desc": "Ear, Nose & Throat",
+      "imageKey": "ent_specialist"
+    },
+    {
+      "id": "10",
+      "title": "Dentist",
+      "desc": "Dental Care",
+      "imageKey": "dentist"
+    },
+    {
+      "id": "11",
+      "title": "Pulmonologist",
+      "desc": "Lung Care",
+      "imageKey": "pulmonologist"
+    },
+    {
+      "id": "12",
+      "title": "Psychiatrist",
+      "desc": "Mental Health",
+      "imageKey": "psychiatrist"
+    },
+    {
+      "id": "13",
+      "title": "Gastroenterologist",
+      "desc": "Digestive Health",
+      "imageKey": "gastroenterologist"
+    },
+    {
+      "id": "14",
+      "title": "Nephrologist",
+      "desc": "Kidney Care",
+      "imageKey": "nephrologist"
+    },
+    {
+      "id": "15",
+      "title": "Oncologist",
+      "desc": "Cancer Care",
+      "imageKey": "oncologist"
+    }
+  ],
+  "departments": [
+    {
+      "id": "1",
+      "title": "Pharmacy\nDepartment",
+      "iconLib": "fa5",
+      "iconName": "capsules",
+      "imageKey": "pharmacy"
+    },
+    {
+      "id": "2",
+      "title": "Nursing\nDepartment",
+      "iconLib": "fa5",
+      "iconName": "user-nurse",
+      "imageKey": "nursing"
+    },
+    {
+      "id": "3",
+      "title": "Physiotherapy\nDepartment",
+      "iconLib": "fa5",
+      "iconName": "walking",
+      "imageKey": "physiotherapy"
+    },
+    {
+      "id": "4",
+      "title": "Injection &\nTreatment Room",
+      "iconLib": "fa5",
+      "iconName": "syringe",
+      "imageKey": "treatment_room"
+    },
+    {
+      "id": "5",
+      "title": "Laboratory\nDepartment",
+      "iconLib": "fa5",
+      "iconName": "flask",
+      "imageKey": "laboratory"
+    },
+    {
+      "id": "6",
+      "title": "Radiology &\nImaging",
+      "iconLib": "fa5",
+      "iconName": "x-ray",
+      "imageKey": "radiology"
+    },
+    {
+      "id": "7",
+      "title": "Emergency &\nCasualty",
+      "iconLib": "mci",
+      "iconName": "alarm-light-outline",
+      "imageKey": "emergency"
+    },
+    {
+      "id": "8",
+      "title": "Inpatient &\nWard",
+      "iconLib": "fa5",
+      "iconName": "procedures",
+      "imageKey": "inpatient"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Dr. Priya Menon",
+      "specialty": "General Physician",
+      "department": "General Medicine",
+      "rating": "4.9",
+      "reviews": "1,240",
+      "qualification": "MBBS, MD (General Medicine), 10+ years exp.",
+      "imageKey": "doc_female_1",
+      "consultationFee": 600,
+      "availableToday": true
+    },
+    {
+      "id": "2",
+      "name": "Dr. Arjun Raman",
+      "specialty": "Cardiologist",
+      "department": "Cardiology",
+      "rating": "4.8",
+      "reviews": "900",
+      "qualification": "MBBS, DM (Cardiology), 12+ years exp.",
+      "imageKey": "doc_male_1",
+      "consultationFee": 800,
+      "availableToday": true
+    },
+    {
+      "id": "3",
+      "name": "Dr. Meena Krishnan",
+      "specialty": "Dermatologist",
+      "department": "Dermatology",
+      "rating": "4.7",
+      "reviews": "810",
+      "qualification": "MBBS, MD (Dermatology), 8+ years exp.",
+      "imageKey": "doc_female_2",
+      "consultationFee": 550,
+      "availableToday": true
+    },
+    {
+      "id": "4",
+      "name": "Dr. Karthik Velayutham",
+      "specialty": "Neurologist",
+      "department": "Neurology",
+      "rating": "4.6",
+      "reviews": "610",
+      "qualification": "MBBS, DM (Neurology), 9+ years exp.",
+      "imageKey": "doc_male_2",
+      "consultationFee": 750,
+      "availableToday": true
+    },
+    {
+      "id": "5",
+      "name": "Dr. Neha Sharma",
+      "specialty": "Gastroenterologist",
+      "department": "Gastroenterology",
+      "rating": "4.7",
+      "reviews": "550",
+      "qualification": "MBBS, DM (Gastroenterology), 10+ years exp.",
+      "imageKey": "doc_female_3",
+      "consultationFee": 700,
+      "availableToday": true
+    },
+    {
+      "id": "6",
+      "name": "Dr. Rajesh Kumar",
+      "specialty": "Orthopedic Surgeon",
+      "department": "Orthopedics",
+      "rating": "4.8",
+      "reviews": "720",
+      "qualification": "MBBS, MS (Orthopedics), 14+ years exp.",
+      "imageKey": "doc_male_3",
+      "consultationFee": 900,
+      "availableToday": false
+    },
+    {
+      "id": "7",
+      "name": "Dr. Ananya Iyer",
+      "specialty": "Pediatrician",
+      "department": "Pediatrics",
+      "rating": "4.9",
+      "reviews": "890",
+      "qualification": "MBBS, MD (Pediatrics), 11+ years exp.",
+      "imageKey": "doc_female_4",
+      "consultationFee": 650,
+      "availableToday": false
+    }
+  ],
+  "timeSlots": {
+    "morning": ["08:00 AM", "09:00 AM", "10:00 AM", "11:00 AM"],
+    "afternoon": ["12:00 PM", "01:00 PM", "02:00 PM", "03:00 PM"],
+    "evening": ["06:00 PM", "07:00 PM"]
+  },
+  "appointments": [
+    {
+      "id": "apt-101",
+      "bookingId": "LUXAP125687",
+      "doctorName": "Dr. Priya menon",
+      "specialty": "General Physician",
+      "doctorImageKey": "doc_female_1",
+      "date": "14 Nov 2026, 10:00 AM",
+      "hospital": "LUX Healthcare Hospital",
+      "amount": 743.0,
+      "status": "Upcoming"
+    },
+    {
+      "id": "apt-102",
+      "bookingId": "LUXAP125688",
+      "doctorName": "Dr. Arjun Raman",
+      "specialty": "Cardiology",
+      "doctorImageKey": "doc_male_1",
+      "date": "04 Dec 2026, 12:30 AM",
+      "hospital": "LUX Healthcare Hospital",
+      "amount": 843.0,
+      "status": "Upcoming"
+    },
+    {
+      "id": "apt-103",
+      "bookingId": "LUXAP125689",
+      "doctorName": "Dr. Arjun Raman",
+      "specialty": "Cardiology",
+      "doctorImageKey": "doc_male_1",
+      "date": "04 Dec 2026, 12:30 PM",
+      "hospital": "LUX Healthcare Hospital",
+      "amount": 843.0,
+      "status": "Completed"
+    },
+    {
+      "id": "apt-104",
+      "bookingId": "LUXAP125690",
+      "doctorName": "Dr. Priya Menon",
+      "specialty": "General Physician",
+      "doctorImageKey": "doc_female_1",
+      "date": "21 Nov 2026, 09:30 AM",
+      "hospital": "LUX Healthcare Hospital",
+      "amount": 743.0,
+      "status": "Canceled"
+    }
+  ],
+  "dashboardServices": [
+    {
+      "id": "srv-1",
+      "key": "book",
+      "title": "Book\nAppointment",
+      "icon": "calendar-plus",
+      "lib": "mci",
+      "target": "HospitalDetail"
+    },
+    {
+      "id": "srv-2",
+      "key": "my-app",
+      "title": "My\nAppointments",
+      "icon": "calendar-check",
+      "lib": "mci",
+      "target": "MyAppointments"
+    },
+    {
+      "id": "srv-3",
+      "key": "prescriptions",
+      "title": "Prescriptions",
+      "icon": "store",
+      "lib": "mci"
+    },
+    {
+      "id": "srv-4",
+      "key": "payments",
+      "title": "Payments\n& Bills",
+      "icon": "credit-card",
+      "lib": "feather"
+    },
+    {
+      "id": "srv-5",
+      "key": "lab",
+      "title": "Lab &\nTest Results",
+      "icon": "flask",
+      "lib": "fa5"
+    },
+    {
+      "id": "srv-6",
+      "key": "records",
+      "title": "Medical\nRecords",
+      "icon": "plus-box-outline",
+      "lib": "mci"
+    }
+  ],
+  "billingConfig": {
+    "genericCharge": 30.0,
+    "taxUtility": 13.0,
+    "currency": "₹",
+    "currencyCode": "INR"
+  },
+  "paymentMethods": [
+    {
+      "id": "upi",
+      "label": "UPI (GPay / PhonePe)",
+      "isDefault": true
+    },
+    {
+      "id": "card",
+      "label": "Debit / Credit Card",
+      "isDefault": false
+    },
+    {
+      "id": "netbanking",
+      "label": "Net Banking",
+      "isDefault": false
+    },
+    {
+      "id": "razorpay",
+      "label": "Razorpay",
+      "isNew": true,
+      "isDefault": false
+    }
+  ],
+  "cancellationConfig": {
+    "notice": "5 - 10 minutes for appointment cancellation may apply",
+    "reasons": [
+      "Schedule not suitable",
+      "Facing other",
+      "Booked by mistake",
+      "Other"
+    ]
+  }
+}
+
