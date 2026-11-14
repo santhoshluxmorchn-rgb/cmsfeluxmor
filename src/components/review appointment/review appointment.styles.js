@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -14,7 +15,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   topSection: {
-    gap: 24,
+    gap: 20,
   },
   topRow: {
     flexDirection: 'row',
@@ -30,8 +31,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   headerTitle: {
-    fontSize: 24,
-    fontWeight: '700',
+    fontSize: 22,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   placeholder: {
@@ -50,10 +51,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   hospitalName: {
-    fontSize: 21,
-    fontWeight: '700',
+    fontSize: 19,
+    fontFamily: fonts.headingBold,
     color: '#2F36C6',
-    lineHeight: 26,
+    lineHeight: 24,
   },
   doctorRow: {
     flexDirection: 'row',
@@ -63,9 +64,9 @@ const styles = StyleSheet.create({
     marginVertical: 4,
   },
   doctorAvatar: {
-    width: 82,
-    height: 82,
-    borderRadius: 41,
+    width: 80,
+    height: 80,
+    borderRadius: 40,
     borderWidth: 2.5,
     borderColor: '#B8CEF0',
   },
@@ -74,17 +75,17 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   doctorName: {
-    fontSize: 21,
-    fontWeight: '700',
+    fontSize: 19,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   doctorSpecialty: {
-    fontSize: 17,
-    fontWeight: '600',
+    fontSize: 15,
+    fontFamily: fonts.bodyMedium,
     color: '#475569',
   },
   scheduleSection: {
-    gap: 16,
+    gap: 14,
     paddingLeft: 6,
     marginVertical: 4,
   },
@@ -94,8 +95,8 @@ const styles = StyleSheet.create({
     gap: 16,
   },
   scheduleText: {
-    fontSize: 18,
-    fontWeight: '600',
+    fontSize: 16,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
   feeRow: {
@@ -103,40 +104,40 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 6,
-    marginTop: 8,
+    marginTop: 6,
   },
   feeLabel: {
-    fontSize: 19,
-    fontWeight: '700',
+    fontSize: 17,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   feeAmount: {
-    fontSize: 22,
-    fontWeight: '800',
+    fontSize: 20,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   patientCard: {
     backgroundColor: '#BED8FB',
     borderRadius: 16,
-    paddingVertical: 18,
-    paddingHorizontal: 20,
-    gap: 8,
+    paddingVertical: 16,
+    paddingHorizontal: 18,
+    gap: 6,
     marginTop: 6,
   },
   patientCardText: {
-    fontSize: 17,
-    fontWeight: '600',
+    fontSize: 15,
+    fontFamily: fonts.bodyRegular,
     color: '#1E293B',
-    lineHeight: 25,
+    lineHeight: 22,
   },
   bottomSection: {
     width: '100%',
-    paddingBottom: 36, // Lifts the button well up from the bottom
+    paddingBottom: 36,
     marginTop: 16,
   },
   confirmButton: {
-    height: 56,
-    borderRadius: 28,
+    height: 54,
+    borderRadius: 27,
     backgroundColor: '#2F36C6',
     alignItems: 'center',
     justifyContent: 'center',
@@ -147,8 +148,8 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   confirmButtonText: {
-    fontSize: 20,
-    fontWeight: '700',
+    fontSize: 18,
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
   },
 });

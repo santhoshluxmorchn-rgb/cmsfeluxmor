@@ -1,4 +1,5 @@
 import { Platform, StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 22,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   placeholder: {
@@ -35,14 +36,14 @@ const styles = StyleSheet.create({
   },
   subHeader: {
     fontSize: 15,
-    fontWeight: '600',
+    fontFamily: fonts.bodyMedium,
     color: '#334155',
     textAlign: 'center',
     marginTop: 4,
   },
   selectNewDateLabel: {
     fontSize: 17,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
     marginTop: 10,
     marginBottom: 4,
@@ -63,8 +64,8 @@ const styles = StyleSheet.create({
     padding: 6,
   },
   monthText: {
-    fontSize: 20,
-    fontWeight: '700',
+    fontSize: 19,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   weekRow: {
@@ -75,8 +76,8 @@ const styles = StyleSheet.create({
   dayLabel: {
     width: 44,
     textAlign: 'center',
-    fontSize: 15,
-    fontWeight: '600',
+    fontSize: 14.5,
+    fontFamily: fonts.headingSemiBold,
     color: '#0F172A',
   },
   daysGrid: {
@@ -102,8 +103,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#353EC8',
   },
   dayNumberText: {
-    fontSize: 16.5,
-    fontWeight: '500',
+    fontSize: 16,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
   sundayDayNumber: {
@@ -111,7 +112,7 @@ const styles = StyleSheet.create({
   },
   selectedDayNumberText: {
     color: '#FFFFFF',
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
   legendContainer: {
     flexDirection: 'row',
@@ -132,9 +133,9 @@ const styles = StyleSheet.create({
     borderRadius: 6,
   },
   legendText: {
-    fontSize: 15,
+    fontSize: 14,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
-    fontWeight: '600',
   },
   selectTimeSlotButton: {
     height: 52,
@@ -155,7 +156,7 @@ const styles = StyleSheet.create({
   },
   selectTimeSlotButtonText: {
     fontSize: 17,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
   },
 });

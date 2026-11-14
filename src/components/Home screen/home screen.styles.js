@@ -1,4 +1,5 @@
 import { Dimensions, StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const { height } = Dimensions.get('window');
 
@@ -47,8 +48,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
   },
   featureLabel: {
+    fontFamily: fonts.headingSemiBold,
     fontSize: 12,
-    fontWeight: '600',
     color: '#0F172A',
     textAlign: 'center',
     lineHeight: 16,
@@ -56,8 +57,9 @@ const styles = StyleSheet.create({
   subtitle: {
     marginTop: 16,
     paddingHorizontal: 10,
-    fontSize: 13,
-    lineHeight: 19,
+    fontFamily: fonts.bodyRegular,
+    fontSize: 14,
+    lineHeight: 20,
     color: '#1F2937',
     textAlign: 'center',
   },
@@ -74,8 +76,8 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: '#FFFFFF',
-    fontSize: 20,
-    fontWeight: '500',
+    fontFamily: fonts.headingSemiBold,
+    fontSize: 18,
   },
   dotsContainer: {
     marginTop: 18,
@@ -98,21 +100,21 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 8,
+    gap: 10,
   },
   accountText: {
     fontSize: 15,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
   loginButton: {
-    marginTop: 8,
-    alignSelf: 'center',
-    paddingVertical: 4,
-    paddingHorizontal: 12,
+    marginTop: 6,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   loginText: {
-    fontSize: 18,
-    fontWeight: '500',
+    fontSize: 17,
+    fontFamily: fonts.headingBold,
     color: '#2F36C6',
     letterSpacing: 0.5,
   },

@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -8,38 +9,41 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    paddingTop: '60%',
+    paddingTop: '28%',
     paddingHorizontal: 20,
+    paddingBottom: 24,
   },
   iconWrapper: {
     alignSelf: 'center',
     marginBottom: 4,
   },
   title: {
-    fontSize: 22,
-    fontWeight: '600',
+    fontSize: 24,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
     textAlign: 'center',
   },
   subtitle: {
-    marginTop: 2,
-    fontSize: 12,
-    color: '#0F172A',
+    marginTop: 4,
+    fontSize: 13,
+    fontFamily: fonts.bodyRegular,
+    color: '#334155',
     textAlign: 'center',
   },
   inputBox: {
-    marginTop: 10,
-    height: 42,
-    borderRadius: 12,
-    backgroundColor: '#B8CEF0',
-    paddingHorizontal: 12,
+    marginTop: 12,
+    height: 48,
+    borderRadius: 14,
+    backgroundColor: '#C8DCF5',
+    paddingHorizontal: 14,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
   },
   input: {
     flex: 1,
-    fontSize: 14,
+    fontSize: 15,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
   strengthRow: {
@@ -49,11 +53,12 @@ const styles = StyleSheet.create({
   },
   strengthLabel: {
     fontSize: 13,
+    fontFamily: fonts.bodyRegular,
     color: '#0F172A',
   },
   strengthValue: {
     fontSize: 13,
-    fontWeight: '600',
+    fontFamily: fonts.headingBold,
   },
   barsRow: {
     marginTop: 6,
@@ -67,7 +72,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#D1D5DB',
   },
   rulesCard: {
-    marginTop: 10,
+    marginTop: 12,
     borderRadius: 14,
     backgroundColor: '#BBE2B5',
     paddingVertical: 14,
@@ -81,26 +86,32 @@ const styles = StyleSheet.create({
   },
   ruleText: {
     fontSize: 13,
+    fontFamily: fonts.bodyRegular,
     color: '#0F172A',
   },
   primaryButton: {
-    marginTop: 12,
-    height: 42,
-    borderRadius: 21,
+    marginTop: 16,
+    height: 50,
+    borderRadius: 25,
     backgroundColor: '#2F36C6',
     alignItems: 'center',
     justifyContent: 'center',
+    shadowColor: '#2F36C6',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25,
+    shadowRadius: 6,
+    elevation: 3,
   },
   primaryButtonText: {
     color: '#FFFFFF',
-    fontSize: 17,
-    fontWeight: '600',
+    fontSize: 18,
+    fontFamily: fonts.headingBold,
   },
   outlineButton: {
-    marginTop: 8,
-    height: 42,
-    borderRadius: 21,
-    backgroundColor: '#B8CEF0',
+    marginTop: 10,
+    height: 50,
+    borderRadius: 25,
+    backgroundColor: '#C8DCF5',
     borderWidth: 1.5,
     borderColor: '#2F36C6',
     flexDirection: 'row',
@@ -110,10 +121,9 @@ const styles = StyleSheet.create({
   },
   outlineButtonText: {
     color: '#2F36C6',
-    fontSize: 17,
-    fontWeight: '600',
+    fontSize: 18,
+    fontFamily: fonts.headingBold,
   },
 });
-
 
 export default styles;

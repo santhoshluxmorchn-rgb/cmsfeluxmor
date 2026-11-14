@@ -1,4 +1,5 @@
 import { Dimensions, StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 
@@ -34,13 +35,14 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
     textAlign: 'center',
     marginBottom: 6,
   },
   subtitle: {
     fontSize: 14,
+    fontFamily: fonts.bodyRegular,
     lineHeight: 20,
     color: '#334155',
     textAlign: 'center',
@@ -55,7 +57,7 @@ const styles = StyleSheet.create({
   },
   contactText: {
     fontSize: 17,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   editRow: {
@@ -65,8 +67,8 @@ const styles = StyleSheet.create({
   },
   editText: {
     fontSize: 15,
+    fontFamily: fonts.headingSemiBold,
     color: '#2F36C6',
-    fontWeight: '600',
   },
   otpRow: {
     flexDirection: 'row',
@@ -82,7 +84,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#93C5FD',
     fontSize: 22,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
     textAlign: 'center',
   },
@@ -94,11 +96,12 @@ const styles = StyleSheet.create({
   },
   resendLabel: {
     fontSize: 14.5,
+    fontFamily: fonts.bodyRegular,
     color: '#475569',
   },
   resendTimer: {
     fontSize: 14.5,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#2F36C6',
   },
   primaryButton: {
@@ -117,7 +120,7 @@ const styles = StyleSheet.create({
   primaryButtonText: {
     color: '#FFFFFF',
     fontSize: 19,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
   outlineButton: {
     height: 52,
@@ -133,7 +136,7 @@ const styles = StyleSheet.create({
   outlineButtonText: {
     color: '#2F36C6',
     fontSize: 18,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
 });
 

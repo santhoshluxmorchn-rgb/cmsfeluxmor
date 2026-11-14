@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 22,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   placeholder: {
@@ -36,8 +37,6 @@ const styles = StyleSheet.create({
   scrollContent: {
     paddingBottom: 24,
   },
-
-  // Booking ID Pill Badge matching Figma
   bookingIdBadge: {
     backgroundColor: '#C8DDF8',
     borderRadius: 14,
@@ -49,19 +48,15 @@ const styles = StyleSheet.create({
   },
   bookingIdText: {
     fontSize: 16.5,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
-
-  // Section title
   sectionTitle: {
     fontSize: 16,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
     marginBottom: 10,
   },
-
-  // Dropdown card matching Figma
   dropdownCard: {
     backgroundColor: '#C8DDF8',
     borderRadius: 14,
@@ -77,7 +72,7 @@ const styles = StyleSheet.create({
   },
   dropdownHeaderText: {
     fontSize: 15.5,
-    fontWeight: '600',
+    fontFamily: fonts.headingSemiBold,
     color: '#0F172A',
   },
   optionsList: {
@@ -93,14 +88,12 @@ const styles = StyleSheet.create({
   optionText: {
     fontSize: 15,
     color: '#1E293B',
-    fontWeight: '500',
+    fontFamily: fonts.bodyMedium,
   },
   optionTextSelected: {
-    fontWeight: '700',
     color: '#2F36C6',
+    fontFamily: fonts.headingBold,
   },
-
-  // Yellow Warning Box matching Figma
   warningBox: {
     backgroundColor: '#FDE047',
     borderRadius: 14,
@@ -118,12 +111,10 @@ const styles = StyleSheet.create({
   warningText: {
     flex: 1,
     fontSize: 14,
-    fontWeight: '600',
+    fontFamily: fonts.headingSemiBold,
     color: '#713F12',
     lineHeight: 20,
   },
-
-  // Red Cancel Button matching Figma
   cancelButton: {
     backgroundColor: '#EF4444',
     borderRadius: 14,
@@ -139,7 +130,7 @@ const styles = StyleSheet.create({
   cancelButtonText: {
     color: '#FFFFFF',
     fontSize: 17,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
 });
 

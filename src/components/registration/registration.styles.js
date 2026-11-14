@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -24,12 +25,13 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    fontWeight: '600',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   subtitle: {
     marginTop: 2,
     fontSize: 13,
+    fontFamily: fonts.bodyRegular,
     lineHeight: 17,
     color: '#0F172A',
   },
@@ -42,11 +44,11 @@ const styles = StyleSheet.create({
   },
   inputCard: {
     marginTop: 8,
-    minHeight: 46,
+    minHeight: 48,
     borderRadius: 14,
-    backgroundColor: '#B8CEF0',
+    backgroundColor: '#C8DCF5',
     paddingHorizontal: 10,
-    paddingVertical: 5,
+    paddingVertical: 6,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
@@ -56,16 +58,18 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 12,
-    fontWeight: '500',
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
   required: {
     color: '#DC2626',
+    fontFamily: fonts.bodyBold,
   },
   input: {
     padding: 0,
     marginTop: 1,
-    fontSize: 13,
+    fontSize: 14,
+    fontFamily: fonts.bodyRegular,
     color: '#0F172A',
   },
   selectHeader: {
@@ -75,70 +79,85 @@ const styles = StyleSheet.create({
   },
   valueText: {
     marginTop: 1,
-    fontSize: 13,
+    fontSize: 14,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
   placeholderText: {
-    color: '#334155',
+    color: '#475569',
   },
   createButton: {
-    marginTop: 12,
-    height: 48,
-    borderRadius: 24,
+    marginTop: 14,
+    height: 50,
+    borderRadius: 25,
     backgroundColor: '#2F36C6',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     gap: 10,
+    shadowColor: '#2F36C6',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25,
+    shadowRadius: 6,
+    elevation: 3,
   },
   createButtonText: {
     color: '#FFFFFF',
-    fontSize: 19,
-    fontWeight: '600',
+    fontSize: 18,
+    fontFamily: fonts.headingBold,
   },
   footerRow: {
-    marginTop: 10,
+    marginTop: 12,
+    marginBottom: 20,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
   },
   footerText: {
     fontSize: 14,
+    fontFamily: fonts.bodyRegular,
     color: '#0F172A',
   },
   loginLink: {
     fontSize: 15,
-    fontWeight: '600',
+    fontFamily: fonts.headingBold,
     color: '#2F36C6',
   },
-  modalOverlay: {
+  modalBackdrop: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.4)',
-    justifyContent: 'center',
-    paddingHorizontal: 36,
+    backgroundColor: 'rgba(15, 23, 42, 0.45)',
+    justifyContent: 'flex-end',
   },
-  modalContent: {
+  modalCard: {
     backgroundColor: '#FFFFFF',
-    borderRadius: 16,
-    paddingVertical: 14,
-    paddingHorizontal: 16,
+    borderTopLeftRadius: 24,
+    borderTopRightRadius: 24,
+    paddingTop: 16,
+    paddingBottom: 24,
+    paddingHorizontal: 20,
+    maxHeight: '60%',
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 12,
   },
   modalTitle: {
-    fontSize: 16,
-    fontWeight: '600',
+    fontSize: 17,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
-    marginBottom: 8,
   },
-  modalItem: {
-    paddingVertical: 10,
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: '#E2E8F0',
+  modalOption: {
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#F1F5F9',
   },
-  modalItemText: {
+  modalOptionText: {
     fontSize: 15,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
 });
-
 
 export default styles;

@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -42,12 +43,12 @@ const styles = StyleSheet.create({
   },
   profileHeading: {
     fontSize: 24,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   userName: {
     fontSize: 22,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#2F36C6',
   },
   idRow: {
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
   patientId: {
     fontSize: 15,
     color: '#475569',
-    fontWeight: '600',
+    fontFamily: fonts.bodyMedium,
   },
   badge: {
     flexDirection: 'row',
@@ -72,9 +73,9 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
   },
   badgeText: {
-    fontSize: 13.5,
+    fontSize: 13,
     color: '#15803D',
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
   detailsCard: {
     backgroundColor: '#B8CEF0',
@@ -94,54 +95,97 @@ const styles = StyleSheet.create({
   },
   detailLabel: {
     width: 115,
-    fontSize: 13.5,
+    fontSize: 14,
     color: '#0F172A',
-    fontWeight: '600',
+    fontFamily: fonts.bodyMedium,
+  },
+  colon: {
+    width: 12,
+    fontSize: 14,
+    color: '#0F172A',
+    fontFamily: fonts.bodyBold,
   },
   detailValue: {
     flex: 1,
-    fontSize: 13.5,
+    fontSize: 14,
     color: '#0F172A',
-    fontWeight: '500',
+    fontFamily: fonts.bodyRegular,
+    lineHeight: 19,
   },
   editButton: {
-    marginTop: 14,
+    marginTop: 18,
     height: 48,
     borderRadius: 24,
     backgroundColor: '#2F36C6',
-    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 8,
+    shadowColor: '#2F36C6',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25,
+    shadowRadius: 6,
+    elevation: 3,
   },
   editButtonText: {
+    fontSize: 17,
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
-    fontSize: 18,
-    fontWeight: '600',
   },
-  actionRow: {
-    marginTop: 14,
-    flexDirection: 'row',
-    gap: 10,
-  },
-  actionCard: {
+  modalBackdrop: {
     flex: 1,
-    height: 90,
-    backgroundColor: '#B8CEF0',
-    borderRadius: 16,
-    paddingVertical: 10,
-    paddingHorizontal: 6,
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    backgroundColor: 'rgba(15, 23, 42, 0.45)',
+    justifyContent: 'flex-end',
   },
-  actionText: {
-    fontSize: 12,
-    fontWeight: '600',
+  modalCard: {
+    backgroundColor: '#FFFFFF',
+    borderTopLeftRadius: 24,
+    borderTopRightRadius: 24,
+    padding: 20,
+    maxHeight: '80%',
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
-    textAlign: 'center',
-    lineHeight: 15,
+  },
+  modalInputGroup: {
+    marginBottom: 12,
+  },
+  modalLabel: {
+    fontSize: 13,
+    fontFamily: fonts.bodyMedium,
+    color: '#0F172A',
+    marginBottom: 4,
+  },
+  modalInput: {
+    borderWidth: 1,
+    borderColor: '#CBD5E1',
+    borderRadius: 12,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    fontSize: 14,
+    fontFamily: fonts.bodyRegular,
+    color: '#0F172A',
+    backgroundColor: '#F8FAFC',
+  },
+  saveButton: {
+    marginTop: 16,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: '#2F36C6',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  saveButtonText: {
+    fontSize: 16,
+    fontFamily: fonts.headingBold,
+    color: '#FFFFFF',
   },
 });
-
 
 export default styles;

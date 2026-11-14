@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -28,16 +29,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   headerTitle: {
-    fontSize: 23,
-    fontWeight: '700',
+    fontSize: 22,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   placeholder: {
     width: 34,
   },
   detailsCard: {
-    gap: 18,
-    marginBottom: 28,
+    gap: 16,
+    marginBottom: 26,
     paddingHorizontal: 2,
     marginTop: 14,
   },
@@ -47,28 +48,28 @@ const styles = StyleSheet.create({
   },
   detailLabel: {
     width: 135,
-    fontSize: 16.5,
+    fontSize: 15,
     color: '#0F172A',
-    fontWeight: '600',
+    fontFamily: fonts.bodyMedium,
   },
   colon: {
-    fontSize: 16.5,
+    fontSize: 15,
     color: '#0F172A',
-    fontWeight: '700',
+    fontFamily: fonts.bodyBold,
     marginRight: 14,
   },
   detailValue: {
     flex: 1,
-    fontSize: 16.5,
+    fontSize: 15.5,
     color: '#0F172A',
-    fontWeight: '700',
+    fontFamily: fonts.bodyBold,
   },
   healthIssueSection: {
     marginBottom: 26,
   },
   sectionLabel: {
-    fontSize: 18,
-    fontWeight: '700',
+    fontSize: 17,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
     marginBottom: 10,
   },
@@ -77,10 +78,10 @@ const styles = StyleSheet.create({
     borderRadius: 14,
     padding: 14,
     height: 100,
-    fontSize: 16,
+    fontSize: 15,
+    fontFamily: fonts.bodyRegular,
     color: '#0F172A',
-    fontWeight: '500',
-    lineHeight: 22,
+    lineHeight: 21,
   },
   continueButton: {
     height: 52,
@@ -89,14 +90,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 6,
+    shadowColor: '#2F36C6',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25,
+    shadowRadius: 6,
+    elevation: 3,
   },
   continueButtonText: {
     fontSize: 18,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
   },
-
-  // 21st Screen Styles: View / Reschedule Appointment Details
   doctorProfileSection: {
     alignItems: 'center',
     marginTop: 6,
@@ -112,12 +116,12 @@ const styles = StyleSheet.create({
   },
   doctorLargeName: {
     fontSize: 21,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   doctorLargeSpecialty: {
-    fontSize: 15.5,
-    fontWeight: '500',
+    fontSize: 15,
+    fontFamily: fonts.bodyMedium,
     color: '#64748B',
     marginTop: 3,
   },
@@ -128,12 +132,12 @@ const styles = StyleSheet.create({
   },
   paidLabel: {
     fontSize: 15,
-    fontWeight: '600',
+    fontFamily: fonts.headingBold,
     color: '#16A34A',
   },
   paidAmount: {
-    fontSize: 16.5,
-    fontWeight: '700',
+    fontSize: 16,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   statusBadge: {
@@ -152,8 +156,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#FEE2E2',
   },
   statusBadgeText: {
-    fontSize: 14,
-    fontWeight: '700',
+    fontSize: 13.5,
+    fontFamily: fonts.headingBold,
   },
   statusBadgeTextConfirmed: {
     color: '#16A34A',
@@ -165,7 +169,7 @@ const styles = StyleSheet.create({
     color: '#DC2626',
   },
   addToCalendarButton: {
-    height: 54,
+    height: 52,
     borderRadius: 14,
     backgroundColor: '#2F36C6',
     alignItems: 'center',
@@ -179,11 +183,9 @@ const styles = StyleSheet.create({
   },
   addToCalendarButtonText: {
     fontSize: 18,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
   },
 });
-
-
 
 export default styles;

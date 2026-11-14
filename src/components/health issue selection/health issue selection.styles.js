@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -22,12 +23,13 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 22,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
     textAlign: 'center',
   },
   headerSubtitle: {
-    fontSize: 13,
+    fontSize: 13.5,
+    fontFamily: fonts.bodyRegular,
     color: '#475569',
     textAlign: 'center',
     marginTop: 4,
@@ -49,6 +51,7 @@ const styles = StyleSheet.create({
   searchInput: {
     flex: 1,
     fontSize: 14,
+    fontFamily: fonts.bodyRegular,
     color: '#0F172A',
     paddingVertical: 0,
   },
@@ -75,13 +78,13 @@ const styles = StyleSheet.create({
   },
   cardImage: {
     width: '100%',
-    height: 62,
+    height: 60,
   },
   cardInfo: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 7,
+    paddingHorizontal: 6,
     paddingVertical: 5,
     backgroundColor: '#D7E5FA',
   },
@@ -90,12 +93,13 @@ const styles = StyleSheet.create({
     marginRight: 2,
   },
   cardTitle: {
-    fontSize: 10.5,
-    fontWeight: '700',
+    fontSize: 11,
+    fontFamily: fonts.headingBold,
     color: '#2F36C6',
   },
   cardDesc: {
-    fontSize: 8,
+    fontSize: 11,
+    fontFamily: fonts.bodyRegular,
     color: '#475569',
     marginTop: 1,
   },
@@ -115,8 +119,8 @@ const styles = StyleSheet.create({
   },
   viewMoreText: {
     fontSize: 16,
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
-    fontWeight: '700',
   },
 });
 

@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 22,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   placeholder: {
@@ -49,12 +50,12 @@ const styles = StyleSheet.create({
   activeTab: {},
   tabText: {
     fontSize: 16,
-    fontWeight: '600',
+    fontFamily: fonts.headingSemiBold,
     color: '#0F172A',
   },
   activeTabText: {
     color: '#2F36C6',
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
   activeIndicator: {
     position: 'absolute',
@@ -97,12 +98,12 @@ const styles = StyleSheet.create({
   },
   doctorName: {
     fontSize: 17,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   specialtyText: {
-    fontSize: 13.5,
-    fontWeight: '600',
+    fontSize: 14,
+    fontFamily: fonts.bodyMedium,
     color: '#475569',
   },
   ratingRow: {
@@ -113,17 +114,19 @@ const styles = StyleSheet.create({
   },
   ratingScore: {
     fontSize: 13,
-    fontWeight: '700',
+    fontFamily: fonts.bodyBold,
     color: '#F59E0B',
   },
   reviewsText: {
     fontSize: 12.5,
+    fontFamily: fonts.bodyRegular,
     color: '#475569',
   },
   qualificationText: {
-    fontSize: 11,
+    fontSize: 11.5,
+    fontFamily: fonts.bodyRegular,
     color: '#64748B',
-    lineHeight: 15,
+    lineHeight: 16,
   },
   separator: {
     height: 1,
@@ -131,7 +134,5 @@ const styles = StyleSheet.create({
     opacity: 0.8,
   },
 });
-
-
 
 export default styles;

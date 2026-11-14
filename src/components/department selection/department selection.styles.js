@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,16 +28,16 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 22,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   placeholder: {
     width: 34,
   },
   subTitle: {
-    fontSize: 13,
+    fontSize: 14,
+    fontFamily: fonts.bodyMedium,
     color: '#2F36C6',
-    fontWeight: '600',
     textAlign: 'center',
     marginBottom: 12,
   },
@@ -80,13 +81,11 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     flex: 1,
-    fontSize: 11,
-    fontWeight: '700',
+    fontSize: 12,
+    fontFamily: fonts.headingSemiBold,
     color: '#0F172A',
-    lineHeight: 14,
+    lineHeight: 16,
   },
 });
-
-
 
 export default styles;

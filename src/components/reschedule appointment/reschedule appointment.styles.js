@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 22,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   placeholder: {
@@ -36,8 +37,6 @@ const styles = StyleSheet.create({
   scrollContent: {
     paddingBottom: 24,
   },
-
-  // Consulting Badge matching Figma
   consultingBadge: {
     backgroundColor: '#C8DDF8',
     borderRadius: 14,
@@ -49,19 +48,15 @@ const styles = StyleSheet.create({
   },
   consultingText: {
     fontSize: 16,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
-
-  // Section title
   selectNewDateLabel: {
     fontSize: 17,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
     marginBottom: 12,
   },
-
-  // Calendar Card
   calendarCard: {
     backgroundColor: 'transparent',
     paddingHorizontal: 2,
@@ -79,7 +74,7 @@ const styles = StyleSheet.create({
   },
   monthText: {
     fontSize: 19,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   weekRow: {
@@ -91,7 +86,7 @@ const styles = StyleSheet.create({
     width: 44,
     textAlign: 'center',
     fontSize: 14.5,
-    fontWeight: '600',
+    fontFamily: fonts.headingSemiBold,
     color: '#0F172A',
   },
   daysGrid: {
@@ -118,15 +113,13 @@ const styles = StyleSheet.create({
   },
   dayNumberText: {
     fontSize: 16,
-    fontWeight: '500',
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
   selectedDayNumberText: {
     color: '#FFFFFF',
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
-
-  // Select Time Slot Button matching Figma
   selectTimeSlotButton: {
     height: 52,
     borderRadius: 14,
@@ -141,7 +134,7 @@ const styles = StyleSheet.create({
   },
   selectTimeSlotButtonText: {
     fontSize: 17,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
   },
 });

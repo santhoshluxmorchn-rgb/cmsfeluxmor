@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -18,9 +19,9 @@ const styles = StyleSheet.create({
     gap: 16,
   },
   checkCircle: {
-    width: 90,
-    height: 90,
-    borderRadius: 45,
+    width: 86,
+    height: 86,
+    borderRadius: 43,
     backgroundColor: '#22C55E',
     alignItems: 'center',
     justifyContent: 'center',
@@ -32,8 +33,8 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   title: {
-    fontSize: 26,
-    fontWeight: '800',
+    fontSize: 24,
+    fontFamily: fonts.headingBold,
     color: '#16A34A',
     textAlign: 'center',
     letterSpacing: 0.2,
@@ -51,24 +52,24 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   cardLabel: {
-    fontSize: 16,
-    fontWeight: '600',
+    fontSize: 15,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
   cardValue: {
-    fontSize: 19,
-    fontWeight: '700',
+    fontSize: 18,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   bottomSection: {
     width: '100%',
     gap: 14,
-    paddingBottom: 54, // Lifts the buttons well up from the bottom wave
+    paddingBottom: 54,
     marginTop: 16,
   },
   downloadButton: {
-    height: 54,
-    borderRadius: 27,
+    height: 52,
+    borderRadius: 26,
     backgroundColor: '#2F36C6',
     flexDirection: 'row',
     alignItems: 'center',
@@ -82,12 +83,12 @@ const styles = StyleSheet.create({
   },
   downloadButtonText: {
     fontSize: 18,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
   },
   viewButton: {
-    height: 54,
-    borderRadius: 27,
+    height: 52,
+    borderRadius: 26,
     backgroundColor: '#D4E4FC',
     borderWidth: 1.5,
     borderColor: '#3B4CCA',
@@ -96,10 +97,9 @@ const styles = StyleSheet.create({
   },
   viewButtonText: {
     fontSize: 18,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#2F36C6',
   },
 });
 
 export default styles;
-

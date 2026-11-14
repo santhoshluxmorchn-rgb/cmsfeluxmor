@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -14,7 +15,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   topSection: {
-    gap: 22,
+    gap: 20,
   },
   topRow: {
     flexDirection: 'row',
@@ -30,15 +31,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   headerTitle: {
-    fontSize: 24,
-    fontWeight: '700',
+    fontSize: 22,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   placeholder: {
     width: 36,
   },
   billCard: {
-    gap: 14,
+    gap: 12,
     marginTop: 6,
   },
   billRow: {
@@ -49,13 +50,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
   },
   billLabel: {
-    fontSize: 18,
-    fontWeight: '600',
+    fontSize: 16,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
   billValue: {
-    fontSize: 18,
-    fontWeight: '700',
+    fontSize: 16,
+    fontFamily: fonts.headingSemiBold,
     color: '#0F172A',
   },
   divider: {
@@ -79,22 +80,22 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   totalLabel: {
-    fontSize: 19,
-    fontWeight: '700',
+    fontSize: 17,
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
   },
   totalValue: {
-    fontSize: 21,
-    fontWeight: '800',
+    fontSize: 19,
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
   },
   methodSection: {
-    gap: 16,
+    gap: 14,
     marginTop: 10,
   },
   methodSectionTitle: {
-    fontSize: 18,
-    fontWeight: '700',
+    fontSize: 17,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
     marginBottom: 4,
     paddingLeft: 2,
@@ -125,8 +126,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#2F36C6',
   },
   methodLabel: {
-    fontSize: 17,
-    fontWeight: '600',
+    fontSize: 16,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
   razorpayBadge: {
@@ -139,16 +140,16 @@ const styles = StyleSheet.create({
   razorpayBadgeText: {
     color: '#FFFFFF',
     fontSize: 11,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
   bottomSection: {
     width: '100%',
-    paddingBottom: 32, // Lifts the button well up from the bottom
+    paddingBottom: 32,
     marginTop: 16,
   },
   payButton: {
-    height: 56,
-    borderRadius: 28,
+    height: 54,
+    borderRadius: 27,
     backgroundColor: '#2F36C6',
     alignItems: 'center',
     justifyContent: 'center',
@@ -159,11 +160,10 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   payButtonText: {
-    fontSize: 20,
-    fontWeight: '700',
+    fontSize: 18,
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
   },
 });
 
 export default styles;
-

@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 22,
-    fontWeight: '800',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   avatar: {
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
     borderColor: '#FFFFFF',
   },
   detailsContainer: {
-    marginTop: '36%', // Light-ah mela lift panniyachu
+    marginTop: '36%',
     paddingHorizontal: 4,
     paddingBottom: 24,
   },
@@ -54,9 +55,9 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   reviewText: {
-    fontSize: 17,
+    fontSize: 16,
     color: '#475569',
-    fontWeight: '700',
+    fontFamily: fonts.bodyMedium,
   },
   infoList: {
     gap: 18,
@@ -68,9 +69,9 @@ const styles = StyleSheet.create({
     gap: 14,
   },
   infoText: {
-    fontSize: 17,
+    fontSize: 16,
     color: '#0F172A',
-    fontWeight: '600',
+    fontFamily: fonts.bodyMedium,
     flexShrink: 1,
     lineHeight: 22,
   },
@@ -87,7 +88,7 @@ const styles = StyleSheet.create({
   mapButtonText: {
     fontSize: 18,
     color: '#2F36C6',
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
   bookButton: {
     height: 56,
@@ -99,14 +100,14 @@ const styles = StyleSheet.create({
     gap: 10,
     shadowColor: '#2F36C6',
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.3,
-    shadowRadius: 6,
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
     elevation: 4,
   },
   bookButtonText: {
-    fontSize: 19,
     color: '#FFFFFF',
-    fontWeight: '700',
+    fontSize: 19,
+    fontFamily: fonts.headingBold,
   },
 });
 

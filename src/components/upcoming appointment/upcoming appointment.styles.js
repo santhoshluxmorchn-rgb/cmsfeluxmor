@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -26,8 +27,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   headerTitle: {
-    fontSize: 24,
-    fontWeight: '700',
+    fontSize: 22,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   placeholder: {
@@ -47,13 +48,13 @@ const styles = StyleSheet.create({
     position: 'relative',
   },
   tabText: {
-    fontSize: 16.5,
-    fontWeight: '600',
+    fontSize: 16,
+    fontFamily: fonts.headingSemiBold,
     color: '#64748B',
   },
   activeTabText: {
     color: '#2F36C6',
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
   activeIndicator: {
     position: 'absolute',
@@ -88,13 +89,13 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   doctorName: {
-    fontSize: 20,
-    fontWeight: '700',
+    fontSize: 18,
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   doctorSpecialty: {
-    fontSize: 16,
-    fontWeight: '500',
+    fontSize: 14.5,
+    fontFamily: fonts.bodyMedium,
     color: '#475569',
   },
   scheduleInfo: {
@@ -107,8 +108,8 @@ const styles = StyleSheet.create({
     gap: 14,
   },
   scheduleText: {
-    fontSize: 16.5,
-    fontWeight: '600',
+    fontSize: 15,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
   },
   statusBadgeWrapper: {
@@ -131,8 +132,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#DC2626',
   },
   statusBadgeText: {
-    fontSize: 16,
-    fontWeight: '700',
+    fontSize: 15,
+    fontFamily: fonts.headingBold,
     color: '#FFFFFF',
   },
   viewDetailsButton: {
@@ -145,7 +146,7 @@ const styles = StyleSheet.create({
   },
   viewDetailsButtonText: {
     fontSize: 16,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#2F36C6',
   },
   actionButtonsRow: {
@@ -165,8 +166,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   rescheduleButtonText: {
-    fontSize: 16.5,
-    fontWeight: '700',
+    fontSize: 16,
+    fontFamily: fonts.headingBold,
     color: '#2F36C6',
   },
   cancelButton: {
@@ -180,8 +181,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   cancelButtonText: {
-    fontSize: 16.5,
-    fontWeight: '700',
+    fontSize: 16,
+    fontFamily: fonts.headingBold,
     color: '#DC2626',
   },
   separator: {
@@ -197,11 +198,10 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   emptyText: {
-    fontSize: 17,
-    fontWeight: '600',
+    fontSize: 16,
+    fontFamily: fonts.bodyMedium,
     color: '#64748B',
   },
 });
 
 export default styles;
-

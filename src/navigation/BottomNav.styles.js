@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -15,10 +16,9 @@ const styles = StyleSheet.create({
     gap: 3,
   },
   label: {
-    fontSize: 11,
-    fontWeight: '500',
+    fontSize: 11.5,
+    fontFamily: fonts.bodyMedium,
   },
 });
 
 export default styles;
-

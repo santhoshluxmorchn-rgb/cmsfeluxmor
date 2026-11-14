@@ -1,4 +1,5 @@
 import { Dimensions, StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 
@@ -44,13 +45,14 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
     textAlign: 'center',
     marginBottom: 8,
   },
   subtitle: {
     fontSize: 14,
+    fontFamily: fonts.bodyRegular,
     lineHeight: 20,
     color: '#334155',
     textAlign: 'center',
@@ -74,11 +76,13 @@ const styles = StyleSheet.create({
   },
   slash: {
     fontSize: 15,
+    fontFamily: fonts.bodyRegular,
     color: '#0F172A',
   },
   input: {
     flex: 1,
     fontSize: 15.5,
+    fontFamily: fonts.bodyMedium,
     color: '#0F172A',
     paddingVertical: 0,
   },
@@ -98,7 +102,7 @@ const styles = StyleSheet.create({
   primaryButtonText: {
     color: '#FFFFFF',
     fontSize: 19,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
   outlineButton: {
     height: 52,
@@ -114,7 +118,7 @@ const styles = StyleSheet.create({
   outlineButtonText: {
     color: '#2F36C6',
     fontSize: 18,
-    fontWeight: '700',
+    fontFamily: fonts.headingBold,
   },
 });
 

@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { fonts } from '../../theme/typography';
 
 const styles = StyleSheet.create({
   container: {
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: '43%', // 6 boxes light-ah keezha erakkapatadhu
+    marginBottom: '43%',
   },
   greetingRow: {
     flexDirection: 'row',
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
   },
   greeting: {
     fontSize: 22,
-    fontWeight: '600',
+    fontFamily: fonts.headingBold,
     color: '#0F172A',
   },
   wave: {
@@ -31,7 +32,8 @@ const styles = StyleSheet.create({
   },
   subGreeting: {
     marginTop: 2,
-    fontSize: 13,
+    fontSize: 14,
+    fontFamily: fonts.bodyRegular,
     color: '#475569',
   },
   avatar: {
@@ -67,12 +69,11 @@ const styles = StyleSheet.create({
   },
   cardText: {
     fontSize: 15,
-    fontWeight: '700',
+    fontFamily: fonts.headingSemiBold,
     color: '#0F172A',
     textAlign: 'center',
-    lineHeight: 18,
+    lineHeight: 19,
   },
 });
-
 
 export default styles;
