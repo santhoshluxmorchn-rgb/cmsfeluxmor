@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     borderColor: '#FFFFFF',
   },
   detailsContainer: {
-    marginTop: SCREEN_HEIGHT > 700 ? 145 : 115,
+    marginTop: SCREEN_HEIGHT > 700 ? 180 : 145,
     paddingHorizontal: 4,
     paddingBottom: 20,
   },
